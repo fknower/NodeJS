@@ -28,3 +28,5 @@ const a = require('./notes.js')
 console.log(validator.isURL('example.com'));                       uses validator to test if something is a valid url  
 
 npm i nodemon@1.19.0 -g                                            This installs a package globally
+nodemon -v                                                         gives the vesion of nodemon installed and also can be user test if it 
+                                                                   installed correctly
