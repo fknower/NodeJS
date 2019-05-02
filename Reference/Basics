@@ -1,1 +1,20 @@
-node -v                                               returns node version installed.
+node -v                                                           returns node version installed.
+
+const fs = require('fs')                                          loads the file system module
+fs.writeFileSync('notes.txt','my name is Andrew')                 creats a file with txt called notes.txt
+fs.appendFileSync('notes.txt','my name is franco')                appends the txt to notes.txt
+
+\\file --- notes.js
+ const getnotes = function ()
+{
+    return 'your notes...'
+}
+
+module.exports = getnotes                                           exports the above function from the file
+
+\\ file2 
+const a = require('./notes.js')                                   
+console.log(a());                                                  imports function and console logs 
+
+
+
