@@ -16,5 +16,5 @@ module.exports = getnotes                                           exports the 
 const a = require('./notes.js')                                   
 console.log(a());                                                  imports function and console logs 
 
-
+npm - v                                                            returns the npm version
 
