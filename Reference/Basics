@@ -18,4 +18,5 @@ console.log(a());                                                  imports funct
 
 npm - v                                                            returns the npm version
 
-npm init                                                           initilizes npm in the current directory.                                     
+npm init                                                                                              
+Enter,Enter,Enter...etc                                            initilizes npm in the current directory.  
