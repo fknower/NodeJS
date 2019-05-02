@@ -26,3 +26,5 @@ npm i validator@10.11.0                                            installs vali
 const validator = require('validator')
 const a = require('./notes.js')
 console.log(validator.isURL('example.com'));                       uses validator to test if something is a valid url  
+
+npm i nodemon@1.19.0 -g                                            This installs a package globally
