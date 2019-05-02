@@ -22,3 +22,7 @@ npm init
 Enter,Enter,Enter...etc                                            initilizes npm in the current directory.  
 
 npm i validator@10.11.0                                            installs validator version 10.11.0 package into current dir
+
+const validator = require('validator')
+const a = require('./notes.js')
+console.log(validator.isURL('example.com'));                       uses validator to test if something is a valid url  
