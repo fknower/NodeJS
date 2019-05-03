@@ -8,11 +8,30 @@ const a = require('./notes.js')
 console.log(chalk.green('Success') + chalk.bgRed.bold.blue('Success'))
 
 // create add command
+const chalk = require('chalk')
+const yargs = require('yargs')
+const a = require('./notes.js')
+
+console.log(chalk.green('Success') + chalk.bgRed.bold.blue('Success'))
+
+// create add command
 yargs.command({
     command: 'add',
     describe: 'Add a new note',
-    handler: function(){
-        console.log('Adding a new note!')
+    builder: {
+        title:{
+            describe:'Note title',
+            demandOption: true, 
+            type: 'string'   
+        },
+        body:{
+            describe:'Body title',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: function(argv){
+        console.log('Title:' + argv.title)
     }
 })
 
@@ -42,3 +61,8 @@ yargs.command({
         console.log('list a note')
     }
 })
+
+
+console.log(yargs.argv)
+
+
