@@ -1,0 +1,1 @@
+console.log(process.argv[2])                                 When you do a 'node app.js franco' in terminal,  you get franco printed 
