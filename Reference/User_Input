@@ -1,1 +1,44 @@
 console.log(process.argv[2])                                 When you do a 'node app.js franco' in terminal,  you get franco printed 
+
+//adding commands
+const chalk = require('chalk')
+const yargs = require('yargs')
+const a = require('./notes.js')
+
+console.log(chalk.green('Success') + chalk.bgRed.bold.blue('Success'))
+
+// create add command
+yargs.command({
+    command: 'add',
+    describe: 'Add a new note',
+    handler: function(){
+        console.log('Adding a new note!')
+    }
+})
+
+// create remove command
+yargs.command({
+    command: 'remove',
+    describe: 'Remove a note!',
+    handler: function(){
+        console.log('Removing a note!')
+    }
+})
+
+// create read command
+yargs.command({
+    command: 'read',
+    describe: 'Read a note',
+    handler: function(){
+        console.log('Reading a note!')
+    }
+})
+
+// create list command
+yargs.command({
+    command: 'list',
+    describe:'List a note!',
+    handler: function(){
+        console.log('list a note')
+    }
+})
