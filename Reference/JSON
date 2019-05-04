@@ -1,0 +1,24 @@
+// Saves JSON to file
+
+const fs = require('fs')
+//const book = {
+//    title:'Ego is the Enemy',
+//    author: 'Ryan Holiday'
+//}
+
+//const bookJSON = JSON.stringify(book)
+//console.log(bookJSON)
+
+//const parsedData = JSON.parse(bookJSON)
+//console.log(parsedData.author)
+//fs.writeFileSync('1-jason.json',bookJSON)
+
+
+// reads the file into a buffer
+const databuffer = fs.readFileSync('1-jason.json')
+// convert buffer to string
+const dataJSON = databuffer.toString()
+//converts back to JSON 
+const data = JSON.parse(dataJSON)
+//not you can access the different bits as below
+console.log(data.title)
