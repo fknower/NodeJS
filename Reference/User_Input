@@ -65,4 +65,6 @@ yargs.command({
 
 console.log(yargs.argv)
 
+NOTE : console.log(yargs.argv) is critical to see output from commands. without this the commands do not work
+
 
