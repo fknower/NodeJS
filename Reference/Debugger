@@ -1,0 +1,3 @@
+debugger                                                    This needs to be added to your code
+
+node inspect  appName.js                                    Run this in the command line
