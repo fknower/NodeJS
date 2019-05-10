@@ -8,3 +8,6 @@ chrome://inspect/#devices                                   this needs to be run
 
 
 restart                                                     when in debugger mode. typing this in to the terminal will restart the app.
+
+
+[ctrl] + [c] [ctrl] + [c]                                   to exit the debugger
