@@ -26,5 +26,16 @@ prints -->
 It is currently : 58.63 degrees out. There is a 0.0026% chance of rain
 
 
+Geo coding example working with mapbox api
+
 At the end of the url can be added key value pairs. starting with the "?" and adding a "&" between multiple key value pairs  
 https://api.darksky.net/forecast/ea85433f0696b535852f8aaee759a2f6/37.8267,-122.4233?key=value&key2=value2&key3=value3 etc...
+
+const url2 = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1Ijoia25vd2VyIiwiYSI6ImNqdmlnd29mbjA1ajI0OHQ2MDR0cWw3ZHYifQ.MmLrPwP2ZSRM8tq3IxLWwQ&limit=1'
+request({url:url2, json:true}, (error,response) => {
+    console.log(response.body.features[0].center[1])
+
+  lat = response.body.features[0].center[0]
+  long = response.body.features[0].center[1]
+console.log( ' latitude : ' + lat + ' long :' + long)
+})
