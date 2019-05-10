@@ -24,3 +24,7 @@ request({url: url, json:true} , (error, response) => {
 
 prints --> 
 It is currently : 58.63 degrees out. There is a 0.0026% chance of rain
+
+
+At the end of the url can be added key value pairs. starting with the "?" and adding a "&" between multiple key value pairs  
+https://api.darksky.net/forecast/ea85433f0696b535852f8aaee759a2f6/37.8267,-122.4233?key=value&key2=value2&key3=value3 etc...
