@@ -4,3 +4,7 @@ node inspect  appName.js                                    Run this in the comm
 
 
 chrome://inspect/#devices                                   this needs to be run in crome
+
+
+
+restart                                                     when in debugger mode. typing this in to the terminal will restart the app.
