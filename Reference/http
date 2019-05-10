@@ -7,3 +7,20 @@ request({url: url} , (error, response) => {
 const data = JSON.parse(response.body)
     console.log(data.currently)
 })
+
+Example code prints out temp and chance of rain
+
+const request = require('request')
+const url = 'https://api.darksky.net/forecast/ea85433f0696b535852f8aaee759a2f6/37.8267,-122.4233'
+
+request({url: url, json:true} , (error, response) => {
+   // console.log(response.body.currently)
+   temp = response.body.currently.temperature
+   rainPercent = response.body.currently.precipIntensity
+   console.log('It is currently : '+ temp + ' degrees out. There is a ' + rainPercent + '% chance of rain')
+}) 
+
+
+
+prints --> 
+It is currently : 58.63 degrees out. There is a 0.0026% chance of rain
