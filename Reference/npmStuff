@@ -1,3 +1,4 @@
 chalk                                                           colour in programs
 yargs                                                           text parsing and commands in node js
 request                                                         Simplified HTTP client
+npm i node-binance-api                                          Access to binance API
