@@ -4,3 +4,22 @@ A callback is simply a function that takes another function as a parameter.
 setTimeout(() => {        
     console.log("Two seconds are up")
 }, 2000)
+
+
+A usefull feture of callback functions. To return stuff from inside a function you can just call the callback function from inside
+the function As below. 
+
+const geocode = (address, callback) => {
+   setTimeout(
+       ()=> {
+                const data = {
+                latitude: 0,
+                longitude: 0
+                }
+        callback(data)
+        }, 2000)
+}
+
+geocode('Philadelphia',(AvyVariable) => {
+    console.log(Anyvariable)
+})
