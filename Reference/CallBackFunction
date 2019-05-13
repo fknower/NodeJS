@@ -1,0 +1,6 @@
+A callback is simply a function that takes another function as a parameter.
+
+\\example of a callback function
+setTimeout(() => {        
+    console.log("Two seconds are up")
+}, 2000)
