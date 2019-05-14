@@ -5,7 +5,7 @@ const product = {
     salePrice: undefined
 }
 
-\\ The above object is destructured below. In the example below label is renamed, and rating is given a default value.
+// The above object is destructured below. In the example below label is renamed, and rating is given a default value.
 
 
 const {label:productLabel,stock,rating = 5} = product
@@ -13,3 +13,11 @@ const {label:productLabel,stock,rating = 5} = product
 console.log(productLabel)
 console.log(stock)
 console.log(rating)
+
+//  Example of destructuring as a function argument
+
+const transaction = (type,{label, stock }) => {
+    console.log(type, label, stock)
+}
+
+transaction('order', product)
