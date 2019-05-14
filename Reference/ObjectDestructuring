@@ -5,9 +5,11 @@ const product = {
     salePrice: undefined
 }
 
-\\ The above object is  destructured below
+\\ The above object is destructured below. In the example below label is renamed, and rating is given a default value.
 
-const {label,stock} = product
 
-console.log(label)
+const {label:productLabel,stock,rating = 5} = product
+
+console.log(productLabel)
 console.log(stock)
+console.log(rating)
