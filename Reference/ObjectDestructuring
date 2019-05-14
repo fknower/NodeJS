@@ -1,0 +1,13 @@
+const product = {
+    label: 'Red notebook',
+    price: 3,
+    stock:201,
+    salePrice: undefined
+}
+
+\\ The above object is  destructured below
+
+const {label,stock} = product
+
+console.log(label)
+console.log(stock)
