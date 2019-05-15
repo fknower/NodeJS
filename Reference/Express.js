@@ -11,7 +11,7 @@ app.get('',(req, res) => {
 
                                                     // when "localhost:3000/help" is typed in the browser. It is assigned to req (request)
                                                     // then res (response) 'Hello Express is desplayed in the browser'
-                                                    // this is call a rout
+                                                    // this is call a route
 
 app.get('/help', (req,res) => {
     res.send('Help Page')
