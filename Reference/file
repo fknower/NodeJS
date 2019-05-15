@@ -3,3 +3,9 @@ console.log(__dirname)                                    prints current directo
 console.log(path.join(__dirname,'../public'))             this goes dowwn the dir tree as if '..' was typed and then up again to public 
 
 console.log(__filename)                                   prints out file path. C:\test\nodejs\web-server\src\app.js
+
+
+                                                          opens the index file in C:\test\nodejs\web-server\public\index
+Dirpath = path.join(__dirname,'../public')
+app.use(express.static(Dirpath))
+
