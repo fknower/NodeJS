@@ -1,0 +1,3 @@
+console.log(__dirname)                                    prints current directory path eg C:\test\nodejs\web-server\src
+
+console.log(__filename)                                   prints out file path. C:\test\nodejs\web-server\src\app.js
