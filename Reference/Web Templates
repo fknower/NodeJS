@@ -1,1 +1,7 @@
 npm i hbs                                         requires expressjs
+
+app.set('view engine','hbs')
+
+app.get('',(req,res) => {                          this renders the page
+    res.render('index')
+})
