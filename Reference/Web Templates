@@ -2,6 +2,6 @@ npm i hbs                                         requires expressjs
 
 app.set('view engine','hbs')
 
-app.get('',(req,res) => {                          this renders the page
+app.get('',(req,res) => {                          this renders the page. allows it to be dynamically changed
     res.render('index')
 })
