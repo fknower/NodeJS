@@ -15,7 +15,7 @@ app.get('',(req,res) => {                         example of an object being ren
 
 
 <!DOCTYPE html>                                                 Example of how you would access the above object using {{object}}
-
+                                                                Note this is a hbs file
 <html>
     <head>
         <link rel="stylesheet" href="./css/styles.css">
