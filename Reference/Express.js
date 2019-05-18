@@ -45,6 +45,10 @@ app.get('/JSON',(req,res) => {
        age: 30
     }])
 })
+                                              // matches any page 
+app.get('*',(req,res)=>{
+res.send('My 404 page')
+})
                                                   //starts the webserver on port 3000
 app.listen(3000, () =>{
     console.log('Server is up on port 3000')
