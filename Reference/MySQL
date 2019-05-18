@@ -1,0 +1,4 @@
+npm i mysql                                                                            npm module
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'      This needs to be done in workbench
+flush privileges;
