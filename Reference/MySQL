@@ -5,3 +5,22 @@ npm i mysql                                                                     
 create user nodeuser@localhost identified by 'nodeuser@1234';                         
 grant all privileges on node.* to nodeuser@localhost;
 ALTER USER 'nodeuser'@localhost IDENTIFIED WITH mysql_native_password BY 'nodeuser@1234';
+
+
+var mysql = require('mysql');                                                           example program
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'Zabeck20',
+  database : 'join_us'
+});
+ 
+connection.connect();
+var q = 'SELECT curtime() as time,curdate() as date, NOW() as now'
+ 
+connection.query(q, function (error, results, fields) {
+  if (error) throw error;
+  console.log('The solution is: ', results[0].solution);
+  console.log(results[0].date) 
+});
+connection.end();
