@@ -44,3 +44,22 @@ var end_result = connection.query('INSERT INTO users SET ?', person, function(er
   if (err) throw err;
   console.log(result);
 });
+
+
+                                                                    Below inserts 500 records
+                                                                    
+var data = []
+
+do{
+    data.push([
+    faker.internet.email(),
+    faker.date.past()
+]);
+
+}while(data.length < 500)
+
+const q = 'insert into users (email, created_at) values ?'
+var end_result = connection.query(q, [data], function(err, result) {
+if (err) throw err;
+console.log(result);
+});
