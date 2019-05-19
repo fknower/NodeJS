@@ -26,12 +26,20 @@ connection.query(q, function (error, results, fields) {
 connection.end();
 
 
-                                                                                inserts json data
-var person = {email:'Rachelle15@gmail.com'}                                 
-
-connection.query('insert into users set ?',person, function (error, results) {
+                                                                             Use the code snipet below to insert data
+var q = 'INSERT INTO users (email) VALUES ("rusty_the_dog@gmail.com")';
+ 
+connection.query(q, function (error, results, fields) {
   if (error) throw error;
-
-  console.log(results) 
+  console.log(results);
 });
-
+                                                                              Below inserts json data
+var person = {
+    email: faker.internet.email(),
+    created_at: faker.date.past()
+};
+ 
+var end_result = connection.query('INSERT INTO users SET ?', person, function(err, result) {
+  if (err) throw err;
+  console.log(result);
+});
