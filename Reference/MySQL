@@ -24,3 +24,6 @@ connection.query(q, function (error, results, fields) {
   console.log(results[0].date) 
 });
 connection.end();
+
+
+var person = {email:'Rachelle15@gmail.com'}
