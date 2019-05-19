@@ -33,7 +33,8 @@ connection.query(q, function (error, results, fields) {
   if (error) throw error;
   console.log(results);
 });
-                                                                              Below inserts json data
+                                                                              Below inserts json data. Note date is automatically
+                                                                              Parsed and converted to mysql
 var person = {
     email: faker.internet.email(),
     created_at: faker.date.past()
