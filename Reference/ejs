@@ -1,0 +1,7 @@
+npm i ejs
+
+app.set("view engine", "ejs");
+
+need a views folder.
+and all html docs asved as ejs
+
