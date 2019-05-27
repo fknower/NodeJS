@@ -1,0 +1,14 @@
+example http:\\www.blar.blar/blar?key=value&key2=value2
+
+app.get('/products',(req,res) => {                                
+    if (!req.query.search) {                                   
+        return res.send({                                             // note without the return you will get a cannot set headers after
+            error: 'You must provide a search term'                   // they are sent
+        })
+
+    }
+  console.log(req.query.search)
+    res.send({
+        products: []
+    })
+})
