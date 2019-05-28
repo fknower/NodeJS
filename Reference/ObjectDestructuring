@@ -21,3 +21,9 @@ const transaction = (type,{label, stock }) => {
 }
 
 transaction('order', product)
+
+// Example of the transaction function destructured to a undefined value
+
+const transaction = (type,{label, stock }={}) => {
+    console.log(type, label, stock)
+}
