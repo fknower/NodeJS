@@ -1,0 +1,14 @@
+// CollectionName - enter your collection name here. $set is the setter for the fields in the collection
+
+db.collection('CollectionName').updateMany(
+    {completed:false},
+   {
+       $set: {
+           completed: true
+       }
+   }
+    ).then((result)=>{
+    console.log(result)
+}).catch((error)=>{
+    console.log(error)
+})
