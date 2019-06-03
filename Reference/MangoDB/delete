@@ -1,5 +1,7 @@
 // collectionName - enter your collection name
 
+// enter the connect database bit here
+
 db.collection('collectionName').deleteOne({
     docs: 'file1'
 }).then((result)=>{
