@@ -1,0 +1,9 @@
+// collectionName - enter your collection name
+
+db.collection('collectionName').deleteOne({
+    docs: 'file1'
+}).then((result)=>{
+    console.log(result)
+}).catch((error)=>{
+    console.log(error)
+})
