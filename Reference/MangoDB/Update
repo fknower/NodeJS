@@ -1,5 +1,8 @@
 // CollectionName - enter your collection name here. $set is the setter for the fields in the collection
 
+// enter the connect database bit here
+
+
 db.collection('CollectionName').updateMany(
     {completed:false},
    {
