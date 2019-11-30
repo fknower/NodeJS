@@ -1,0 +1,26 @@
+const path = require('path')
+
+const express = require('express')
+const app = express()
+
+const helmet = require('helmet')
+app.use = require('helmet')
+
+app.use(express.static('webpages'))
+app.use(express.json())
+app.use(express.urlencoded())
+
+app.set('view engine', 'ejs')
+app.set('views',path.join(__dirname,'views'))
+app.removeListener(3000)
+
+const port = process.env.PORT || 3002
+app.listen(port,()=>{
+    console.log('Server is up on port'+port)
+})
+
+Directory structure
+images
+source
+views
+webpages
