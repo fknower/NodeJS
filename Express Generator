@@ -1,15 +1,16 @@
 To use
-1. npm i express-generator -g          // installs express generator golobally
+1. npm i express-generator -g                                          // installs express generator golobally
 
 2. cd to folder
 
-3. express MySiteName                    // creates all the site stuff automagically
+3. express MySiteName     or   express MySiteName --view=ejs           // creates all the site stuff automagically
 
 4.go to MysiteName folder 
 
-5. npm install                         // this will install all the modules automatically
+5. npm install                                                          // this will install all the modules automatically
 
 
+to change the view engin to ejs type : express MySiteName --view=ejs
 
 dont forget to add helmut
 
