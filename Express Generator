@@ -9,4 +9,8 @@ To use
 
 5. npm install                         // this will install all the modules automatically
 
+
+
+dont forget to add helmut
+
 you can just type nodemon  and it should just run
