@@ -1,0 +1,12 @@
+To use
+1. npm i express-generator -g          // installs express generator golobally
+
+2. cd to folder
+
+3. express MySiteName                    // creates all the site stuff automagically
+
+4.go to MysiteName folder 
+
+5. npm install                         // this will install all the modules automatically
+
+you can just type nodemon  and it should just run
