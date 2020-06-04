@@ -3,10 +3,8 @@ NodeJS stuff
 A basic server setup that read index.html in \public directory and serves up to the web.
 use "localhost:3000" as the url
 
-
-
-
 const path = require('path')
+
 const express = require('express')
 
 const app = express()
